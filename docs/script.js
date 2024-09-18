@@ -1,6 +1,6 @@
 // const baseURL = 'http://localhost:1234';
 
-const baseURL = 'https://student-management-api-n0lp.onrender.com/';  // New Render URL
+const baseURL = 'https://student-management-api-n0lp.onrender.com';  // New Render URL
 
 
 // Add Student
