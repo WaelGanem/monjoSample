@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Management</h1>
+
+    <!-- Add Student Section -->
+    <div class="crud-section">
+        <h2>Add Student</h2>
+        <input type="text" id="addName" placeholder="Name">
+        <input type="number" id="addAge" placeholder="Age">
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <!-- Update Student Section -->
+    <div class="crud-section">
+        <h2>Update Student</h2>
+        <input type="text" id="updateId" placeholder="Student ID">
+        <input type="text" id="updateName" placeholder="New Name">
+        <input type="number" id="updateAge" placeholder="New Age">
+        <button onclick="updateStudent()">Update Student</button>
+    </div>
+
+    <!-- Delete Student Section -->
+    <div class="crud-section">
+        <h2>Delete Student</h2>
+        <input type="text" id="deleteId" placeholder="Student ID">
+        <button onclick="deleteStudent()">Delete Student</button>
+    </div>
+
+    <!-- Fetch All Students Section -->
+    <div class="crud-section">
+        <h2>All Students</h2>
+        <button onclick="fetchAllStudents()">Fetch All Students</button>
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id="studentsBody">
+                <!-- Fetched students will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
